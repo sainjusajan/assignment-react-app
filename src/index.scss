@@ -1,0 +1,151 @@
+$base-color: #009688;
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #ececec;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.inner-container {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+section {
+  min-height: calc(100vh - 0px);
+  padding: 2em 0;
+  .title {
+    font-weight: 400;
+    font-size: 1.5em;
+    color: $base-color;
+  }
+}
+.mr10 {
+  margin-right: 10px;
+}
+.mt25 {
+  margin-top: 25px;
+}
+
+
+.css-button-sliding-to-left--green {
+  min-width: 130px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid $base-color;
+  color: $base-color;
+}
+.css-button-sliding-to-left--green:hover {
+  color: #fff;
+}
+.css-button-sliding-to-left--green:hover:after {
+  width: 100%;
+}
+.css-button-sliding-to-left--green:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: $base-color;
+}
+a {
+  text-decoration: none;
+  color: $base-color;
+}
+
+.cart-icon--holder {
+  position: relative;
+  img {
+    height: 20px;
+  }
+  span {
+    position: absolute;
+    bottom: -12px;
+    left: 12px;
+    background-color: #eabf01;
+    font-size: 11px;
+    color: black;
+    border-radius: 50%;
+    padding: 0;
+    font-weight: bold;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.alert {
+  background: #d0edd5;
+  padding: 1.2em;
+  border-radius: 6px;
+}
+.alert-danger {
+  background: #e6b187;
+  padding: 1.2em;
+  border-radius: 6px;
+}
+
+.select-btn {
+  background: transparent;
+  border: 2px solid $base-color;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #03685f;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+}
+.quantity button {
+  background: $base-color;
+  border: 0;
+  color: white;
+  height: 25px;
+  width: 25px;
+}
+.quantity input {
+  height: 25px;
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 5px;
+  width: 50px;
+  text-align: center;
+  border-right: 0;
+  border-left: 0;
+}

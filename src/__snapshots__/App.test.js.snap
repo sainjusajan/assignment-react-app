@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RENDER should render correctly checkout page 1`] = `ReactWrapper {}`;

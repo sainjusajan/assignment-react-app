@@ -1,0 +1,20 @@
+.nav {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  font-size: 1em;
+  color: #009688;
+  max-width: 550px;
+  margin: 0 auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+
+  li {
+    display: inline;
+    padding: 22px 20px;
+  }
+}

@@ -1,0 +1,7 @@
+const ProductsActionTypes = {
+  GET_PRODUCTS_LIST_START : 'App/Products/GET_PRODUCTS_LIST_START',
+  GET_PRODUCTS_LIST_SUCCESS : 'App/Products/GET_PRODUCTS_LIST_SUCCESS',
+  GET_PRODUCTS_LIST_FAILURE : 'App/Products/GET_PRODUCTS_LIST_FAILURE',
+}
+
+export default ProductsActionTypes

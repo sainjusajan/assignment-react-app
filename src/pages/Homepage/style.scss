@@ -1,0 +1,98 @@
+.products {
+  .products-wrapper {
+    border-radius: 16px;
+    display: flex;
+    flex-flow: column nowrap;
+    .product-item {
+      background: white;
+      padding: 16px 24px;
+      border-radius: 16px;
+      display: flex;
+      justify-content: space-between;
+      flex: 1;
+      margin-bottom: 12px;
+
+      .desc {
+        .product-title {
+          margin: 0;
+          font-size: 20px;
+          font-weight: 400;
+        }
+        .tag{
+          font-size: 0.7em;
+          text-transform: uppercase;
+          color: white;
+          padding: 3px 10px;
+          border-radius: 15px;
+        }
+        .available {
+          background: #009688;          
+          &--not {
+            background: #d97f62;
+          }
+        }
+        p {
+          margin: 0;
+          color: #858585;
+          font-size: 0.9em;
+          &.mt10 {
+            margin-top: 10px;
+          }
+          span {
+            color: black;
+            font-weight: 500;
+          }
+        }
+      }
+      .price {
+        border-left: 1px solid #e7e7e7;
+        padding-left: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-width: 130px;
+        p {
+          font-weight: 500;
+          font-size: 1.2em;
+          margin: 0 0 10px;
+        }
+      }
+    }
+  }
+
+  .css-button-sliding-to-left--green {
+    min-width: 130px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #009688;
+    color: #009688;
+  }
+  .css-button-sliding-to-left--green:hover {
+    color: #fff;
+  }
+  .css-button-sliding-to-left--green:hover:after {
+    width: 100%;
+  }
+  .css-button-sliding-to-left--green:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #009688;
+  }
+}
